@@ -75,6 +75,7 @@ public class imgurImagesTests {
 
     @Order(1)
     @Test
+    @Disabled
     public void imgurGetAccountImagesTest() {
         given()
                 .baseUri(imgurVariables.URL)
@@ -94,6 +95,7 @@ public class imgurImagesTests {
 
     @Order(2)
     @ParameterizedTest
+    @Disabled
     @MethodSource("getAccountImagesIds")
     public void imgurGetImageTest(String imageId) {
         given()
@@ -113,6 +115,7 @@ public class imgurImagesTests {
 
     @Order(3)
     @ParameterizedTest
+    @Disabled
     @MethodSource("getAccountImagesIds")
     public void imgurUpdateImageAuthedTest(String imageId) {
         given()
@@ -134,6 +137,7 @@ public class imgurImagesTests {
 
     @Order(4)
     @ParameterizedTest
+    @Disabled
     @MethodSource("getAccountImagesDeleteHashes")
     public void imgurUpdateImageUnAuthedTest(String imageDeleteHash) {
         given()
@@ -154,6 +158,7 @@ public class imgurImagesTests {
 
     @Order(5)
     @ParameterizedTest
+    @Disabled
     @MethodSource("getAccountImagesIds")
     public void imgurSetFavoriteImageTest(String imageId) {
         given()
@@ -173,6 +178,7 @@ public class imgurImagesTests {
 
     @Order(6)
     @Test
+    @Disabled
     public void imgurGetAccountFavorites() {
         given()
                 .baseUri(imgurVariables.URL)
@@ -191,6 +197,7 @@ public class imgurImagesTests {
 
     @Order(7)
     @Test
+    @Disabled
     public void imgurCreateAlbum() {
         given()
                 .baseUri(imgurVariables.URL)
@@ -211,6 +218,7 @@ public class imgurImagesTests {
 
     @Order(8)
     @ParameterizedTest
+    @Disabled
     @MethodSource("getAccountImagesIds")
     public void imgurAddImageToAlbumAuthedTest(String imageId) {
         given()
@@ -232,6 +240,7 @@ public class imgurImagesTests {
 
     @Order(9)
     @ParameterizedTest
+    @Disabled
     @MethodSource("getAccountImagesIds")
     public void imgurDeleteImageAuthedTest(String imageId) {
         given()
